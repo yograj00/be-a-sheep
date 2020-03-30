@@ -1,0 +1,12 @@
+#corona-data > #table {
+    display: none;
+}
+
+.external-coviddata{
+    overflow-y:scroll !important;
+    overflow-x:hidden !important;
+    overflow:hidden;
+    height:100%; /* optional */
+    width:100%; /* optional */
+    border:none; /* optional */
+}

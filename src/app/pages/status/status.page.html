@@ -1,0 +1,119 @@
+<ion-content fullscreen class="ion-padding" scroll-y="false">
+  <ion-slides class="swiper-slide" [options]="slideOpts" #healthSlider>
+    <ion-slide>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <h2>Aktiviere alle nachfolgenden Symptome und Statements die auf dich zutreffen</h2>
+            </ion-col>
+          </ion-row>
+          <ion-row style="width: 100%;">
+
+            <ion-col>
+              <ion-list style="width: 100%;">
+                <ion-item color="secondary">
+                  <ion-label>älter als 65 Jahre</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+
+
+                <ion-item color="secondary">
+                  <ion-label>Bluthochdruck</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <p>Wenn trotz Behandlung schlecht kontrolliert</p>
+                <ion-item color="secondary">
+                  <ion-label>Diabetes/ Herz-Kreislauf </ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <p>(Herzinfarkt, Schlaganfall, Herzinsuffizienz in der Vergangenheit)</p>
+                <ion-item color="secondary">
+                  <ion-label>Chronische Lungenkrankheit</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <p>Ausgenommen kontrolliertes Asthma bronchiale, chronische Sinusitis, Heuschnupfen, Schlafapnoe</p>
+                <ion-item color="secondary">
+                  <ion-label>Sausage</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Eine Immunsuppresion</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Behandlung einer Krebserkrankung</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Hohes Fieber (über 38 Grad)</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Schüttelfrost</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Husten</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Atemnot</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Halsschmerzen</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Schluckweh</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Kopfschmerzen</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Gliederschmerzen</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Schnupfen</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Schwindelgefühl</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Übelkeit</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Erbrechen</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+                <ion-item color="secondary">
+                  <ion-label>Durchfall</ion-label>
+                  <ion-toggle></ion-toggle>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button (click)="swipeNext()">Weiter <ion-icon slot="end" name="arrow-forward"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <h2>Ausgezeichnet! Nachdem Du auf senden gedrückt hast berechnen wir Dein Ergebniss und geben Dir sofort Feedback.</h2>
+      <br/>
+      <img src="assets/img/undraw_doctor_kw5l.svg" />
+          
+      <ion-button fill="clear">Absenden <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

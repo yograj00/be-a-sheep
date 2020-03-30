@@ -1,0 +1,49 @@
+<ion-content fullscreen class="tutorial-page" scroll-y="false">
+  <ion-slides pager="true" [options]="slideOpts" #introSlider>
+    <ion-slide fullscreen>
+      <ion-content>
+          <ion-img src="assets/img/intro-1.svg"></ion-img>
+          <p>
+            Die Schweiz steht zur Zeit vor grossen Herausforderungen im Hinblick auf die rasante Verbreitung des COVID-19
+          </p>
+          <p>
+            Hilf der Schweiz die Verteilung des COVID-19 zu reduzieren und behalte dabei die Kontrolle über deine Daten. 
+          </p>
+          
+          <ion-button (click)="swipeNext()">Ich möchte Helfen <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+    </ion-content>
+    </ion-slide>
+    <ion-slide>
+          <ion-header>
+            <ion-toolbar style="padding-top: 20px; padding-bottom: 20px;">
+              <ion-title>
+                <h1>Freigabe</h1>
+              </ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+          <ion-img src="assets/img/intro-2.svg"></ion-img>
+          <p>
+            Um die App zu Nutzen musst du Bluetooth in den Einstellungen aktivieren. 
+
+Dadurch kannst du nachvollziehen, wenn du möglicherweise Kontakt mit einer infizierten Person hattest und dadurch die Infektionskette unterbrechen
+
+Wir speichern nur anonyme Daten ohne die Möglichkeit für einen Rückschluss auf deine Person. Als NGO garantieren wir, dass keine wirtschaftlichen oder politischen Interessen unsere Entscheidung zur Datenspeicherung jetzt oder in der Zukunft beeinflussen können.
+
+Informationen zum Datenschutz
+
+
+
+          </p>
+          
+          <ion-button (click)="swipeNext()">Verstanden <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </ion-content>
+          
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/undraw_doctor_kw5l.svg"/>
+          <h2>Bereit?</h2>
+          <ion-button (click)="gotoOverview()" fill="clear">Weiter <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

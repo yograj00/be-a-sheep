@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar style="padding-top: 20px; padding-bottom: 20px;">
+    <ion-title>
+      <h1>Newsfeed</h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Corona Fälle</ion-card-subtitle>
+      <ion-card-title>Schweiz</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <table>
+        <tr>
+          <td><h1>{{totals.cases}}</h1></td><td><h2>Gesamt</h2></td>
+        </tr>
+        <tr>
+          <td><h1>+{{changes.cases}}</h1></td><td><h2>Heute</h2></td>
+        </tr>
+        <tr>
+          <td><h1>{{totals.fatalities}}</h1></td><td><h2>Todesfälle</h2></td>
+        </tr>
+      </table>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card" hidden>
+
+    <ion-card-header>
+      <ion-card-subtitle>Get coordinates</ion-card-subtitle>
+      <ion-card-title>Geolocation</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Click to get your device's location in Latitude and Longitude. Allow the app the required permissions once
+        asked.</p>
+      <ion-row *ngIf="coords && coords.latitude">
+        <ion-text class="coords">My Latitude : {{coords.latitude}}</ion-text>
+      </ion-row>
+      <ion-row *ngIf="coords && coords.longitude">
+        <ion-text class="coords">My Longitude : {{coords.longitude}}</ion-text>
+      </ion-row>
+      <ion-button (click)="locate()" expand="full">Locate Me</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <div *ngFor="let n of news">
+    <ion-card>
+      <span *ngIf="n.image_url"><img src="{{n.image_url}}"></span>
+      <ion-card-content>
+        <ion-row no-padding>
+          <h1>{{ n.title }}</h1>
+        </ion-row>
+        <ion-row>
+            {{n.content}}
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

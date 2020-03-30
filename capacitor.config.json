@@ -1,0 +1,8 @@
+{
+  "appId": "ch.codify.cov19",
+  "appName": "Cov19",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
